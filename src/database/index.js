@@ -2,8 +2,11 @@ import Sequelize from 'sequelize';
 import User from '../app/models/User';
 import Product from '../app/models/Product';
 import databaseConfig from '../config/database';
+import Log from '../app/models/Log';
+import BlacklistToken from '../app/models/BlacklistToken';
+import Exception from '../app/models/Exception';
 
-const models = [User,Product];
+const models = [User, Product, Log, BlacklistToken, Exception];
 
 class Database {
     constructor() {
